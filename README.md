@@ -8,8 +8,8 @@ Tag your code block with `canvas-api`, and the `<canvas>` element will be availa
 
 Try the following example:
 
-```
-/`/`/`canvas-api
+````
+```canvas-api
 cnv.width = cnv.parentNode.scrollWidth
 cnv.height = cnv.width * 9 / 16
 
@@ -34,5 +34,5 @@ function draw_frame () {
 }
 
 requestAnimationFrame (draw_frame)
-/`/`/`
 ```
+````
