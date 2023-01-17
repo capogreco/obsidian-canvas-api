@@ -10,20 +10,20 @@ Try the following example:
 
 ````
 ```canvas-api
-cnv.width = cnv.parentNode.scrollWidth
+cnv.width  = cnv.parentNode.scrollWidth
 cnv.height = cnv.width * 9 / 16
 
 const ctx = cnv.getContext (`2d`)
+const y   = (cnv.height / 2) - 50
 
 let x = -100
-const y = (cnv.height / 2) - 50
 
 function draw_frame () {
 	ctx.fillStyle = `turquoise`
 	ctx.fillRect (0, 0, cnv.width, cnv.height)
 
 	ctx.fillStyle = `deeppink`
-	ctx.fillRect(x, y, 100, 100);
+	ctx.fillRect (x, y, 100, 100);
 	
 	x += 1
 	if (x > cnv.width) {
